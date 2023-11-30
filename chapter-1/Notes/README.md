@@ -1,6 +1,6 @@
 # Notes
 
-## What is Emmet?
+## Q. What is Emmet?
 
 Emmet is a toolkit used to speed up the development process, It usually comes as a plugin or extension which allows us to write shorthand of code which then is converted into a fully fledged code structure.
 
