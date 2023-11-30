@@ -1,0 +1,17 @@
+{
+  "name": "chapter-2",
+  "version": "1.0.0",
+  "description": "This is the second chapter",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shahbaz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
