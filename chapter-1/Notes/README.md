@@ -1,13 +1,13 @@
 # Notes
 
-## Library VS Framework
+## Q. What is the difference between library and framework?
 
 Library is nothing but a reusable piece of code that has been bundled into a package to perform certain action. It abstracts away the actual implementation and simply used to perform a specific task.
 Frameworks on the other hand provide comprehensive structure and guidelines for building application.
 
 **Example**: React is a library and Angular is a framework since React can be used in any project just by installing it, Angular provides the entire configuration, structure and has certain guidelines to be followed.
 
-## Content delivery network (CDN)
+## Q. What is content delivery network (CDN)? How do they work?
 
 A CDN is a network of servers strategically distributed across various geographical locations. These servers work collectively to deliver web content—such as images, videos, scripts, and stylesheets—to users, aiming to minimize latency and improve performance.
 
@@ -28,3 +28,13 @@ Imagine a library with a vast collection of books, located in a central city. Pe
 **Enhanced Reliability:** CDNs offer redundancy and failover mechanisms, ensuring websites remain accessible even if one server encounters issues.
 
 **Global Reach:** They enable seamless content delivery worldwide, irrespective of users' geographical locations.
+
+## Q. Can we write the script tag pointing to out JS file before the React CDN links?
+
+The CDN link should be loaded before the custom JS file, because the code inside the JS file is using React and ReactDOM and if we use them before they are loaded, it won't work.
+
+## Q. What is crossorigin in the script tag?
+
+## Q. Why there are different React CDN links for development and production?
+
+> `root.render()` replaces the root's innerHTML with the react element passed inside it.
