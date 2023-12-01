@@ -16,10 +16,34 @@ A bundler is library that does the minification, chunking.
 
 ^ allows the minor version upgrade, ~ allows the major version upgrade.
 
-## What is the differece between package.json and package.lock.json?
+## Q. What is the differece between package.json and package.lock.json?
 
 package.json allows the latest version to be installed however, package.lock.json keeps the exact track of the version installed.
 
-## What is transitive dependencies?
+## Q. What is transitive dependencies?
 
 When we install a package or dependency, it can have its own set of dependencies which can have further dependencies, this is called transitive dependencies.
+
+## Q. What is node_modules?
+
+All the packages installed in the project will reside in the node_modules directory.
+
+> We don't need to add node_modules to the repo because they are very heavy and they can be re generated using the command `npm install` since the `package.json` file keeps the list of dependencies.
+
+## Q. What is npx?
+
+npx is used to execute a package.
+
+## Q. What does parcel (bundler) do?
+
+Parcel performs below actions.
+
+- Dev Builds
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm - written in C++
+- Caching - Faster Builds
+- Image Optimization
+- Minification
+- Bundling
+- Compress the files

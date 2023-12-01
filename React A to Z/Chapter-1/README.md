@@ -1,4 +1,4 @@
-# Step by step breakdown of the code
+# Chapter 1
 
 - Add content to a web page using JavaScript
 
