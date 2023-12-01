@@ -45,7 +45,7 @@ The CDN link should be loaded before the custom JS file, because the code inside
 
 When the script is fetched from a different origin (domain, protocol etc.) than the one where it is hosted, the browser enforces a secuirty policy called the same origin policy. This policy can restrict scripts from accessing data or interacting with resources from a different origin for security reasons.
 
-The crossorigin attribute in the <script> tag is used to specify how the browser should handle the loading of a script when the script is fetched from a different origin (i.e., a different domain, protocol, or port) than the one where the web page is hosted.
+The crossorigin attribute in the `<script>` tag is used to specify how the browser should handle the loading of a script when the script is fetched from a different origin (i.e., a different domain, protocol, or port) than the one where the web page is hosted.
 
 When you include a script from a different origin, the browser enforces a security policy called the Same-Origin Policy. This policy restricts scripts from accessing data or interacting with resources from a different origin for security reasons.
 
@@ -53,11 +53,15 @@ The crossorigin attribute can take different values:
 
 **Anonymous:** This is the default value. If the crossorigin attribute is set to "anonymous," the script is fetched without sending any user credentials (like cookies or HTTP authentication) along with the request. This setting is suitable when you're loading resources from a different origin that doesn't require credentials for access.
 
-`<script src="https://example.com/script.js" crossorigin="anonymous"></script>`
+```
+<script src="https://example.com/script.js" crossorigin="anonymous"></script>
+```
 
 **Use Credentials:** When the crossorigin attribute is set to "use-credentials," the browser will include user credentials (such as cookies or HTTP authentication) with the request when fetching the script. This setting is used when the server hosting the script requires authentication for access.
 
-`<script src="https://example.com/script.js" crossorigin="use-credentials"></script>`
+```
+<script src="https://example.com/script.js" crossorigin="use-credentials"></script>
+```
 
 ## Q. What is the difference between React and ReactDOM?
 
