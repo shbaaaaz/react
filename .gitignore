@@ -1,4 +1,4 @@
 node_modules/
-.parcel-cache
 
-folder_structure.txt
+dist
+.parcel-cache
