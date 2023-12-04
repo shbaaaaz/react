@@ -1,9 +1,23 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
+import Header from './components/Header'
 
-const name = 'Shahbaz'
-const jsxHeading = <h1>Hey {name}, Welcome to React A to Z</h1>
+const Title = () => {
+  return (
+    <div>
+      <Header />
+      <h1 className='title'>This is the title</h1>
+    </div>
+  )
+}
 
-console.log(jsxHeading)
+const App = () => {
+  return (
+    <div className='App'>
+      <Title />
+    </div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(jsxHeading)
+root.render(<App />)

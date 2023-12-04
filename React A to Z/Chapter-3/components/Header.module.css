@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 10vw;
+  gap: 1rem;
+}
+
+.icon {
+  height: 40px;
+  width: auto;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search,
+.user {
+  font-size: 25px;
+}
+
+form {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input {
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 1.6rem;
+}
+
+input:focus {
+  border: none;
+  outline: 2px solid skyblue;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
