@@ -5,7 +5,6 @@ import Header from './components/Header'
 const Title = () => {
   return (
     <div>
-      <Header />
       <h1 className='title'>This is the title</h1>
     </div>
   )
@@ -14,6 +13,7 @@ const Title = () => {
 const App = () => {
   return (
     <div className='App'>
+      <Header />
       <Title />
     </div>
   )

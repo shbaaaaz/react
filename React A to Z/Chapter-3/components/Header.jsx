@@ -11,7 +11,7 @@ const Header = () => {
         alt='react'
       />
       <div className={styles.menu}>
-        <form>
+        <form className={styles.form}>
           <input
             className={styles.input}
             type='text'
