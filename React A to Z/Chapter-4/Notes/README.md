@@ -62,6 +62,7 @@ The old reconciliation algorithm is called Stack Reconsiliation.
 No Prioritization or Interruption:
 
 **_Handling Updates_**: Stack Reconciliation didn’t have built-in support for interrupting or prioritizing updates.
+
 **_Impact_**: High-priority tasks (e.g., user interactions) couldn't interrupt ongoing rendering updates, leading to potential UI lag or delays in responsiveness.
 
 **React Fiber (Current Implementation)**:
@@ -69,17 +70,20 @@ No Prioritization or Interruption:
 **Asynchronous Rendering**:
 
 **_Approach_**: React Fiber introduced asynchronous rendering, breaking work into smaller units (fibers) that can be paused, interrupted, or resumed, enabling smoother UI interactions.
+
 **_Benefit_**: Allows React to perform work in chunks, prioritizing and interrupting rendering to maintain a responsive user experience.
 Priority and Scheduling:
 
 **Priority and Scheduling**:
 
 **_Prioritization_**: Fiber introduces priority-based scheduling, allowing React to prioritize high-priority updates (e.g., user interactions or animations) over less critical tasks.
+
 **_Enhanced Control_**: This feature ensures that crucial tasks get executed first, preventing UI lag and improving perceived performance.
 
 **Incremental Updates:**
 
 **_Approach_**: React Fiber supports incremental rendering, enabling updates to be processed incrementally instead of completing the entire tree in one go.
+
 **_Advantage_**: Allows React to interleave rendering work with other tasks, enhancing responsiveness and reducing the duration of main thread blocking.
 
 **Summary**:
